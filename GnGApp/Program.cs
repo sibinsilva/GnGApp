@@ -1,4 +1,9 @@
+using GnGApp.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//Add DbContext Configuration
+builder.Services.AddDbContext<AppDbContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
